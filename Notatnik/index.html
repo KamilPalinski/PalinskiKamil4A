@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Notatnik</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <div class="form-group">
+                <label for="Tytul">Tytul</label>
+                <input type="text" name="Tytul" id="Tytul" maxlength="20" class="form-control" placeholder="Tytul">
+            </div>
+            <div class="form-group">
+                <label for="Zawartosc">Zawartosc</label>
+                <input type="text" name="Zawartosc" maxlength="155" id="Zawartosc" class="form-control" placeholder="Wpisz...">
+            </div>
+            <div class="form-group">
+                <label for="Wazne">Wazne</label>
+                <input type="checkbox" name="Wazne" id="Wazne">
+            </div>
+            <div class="form-group">
+                <label for="Kolor">Kolor</label>
+                <input type="color" name="Kolor" id="Kolor" value="#ffffcc">
+            </div>
+            <button class="button"  onclick="deleteNotes()">Usun notatke</button>
+            <button class="button" onclick="addNote()">Dodaj notatke</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="container">
+            <ul id="notesList">
+                <li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <script src="Note.js"></script> -->
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
